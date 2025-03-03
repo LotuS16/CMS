@@ -12,16 +12,20 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm install  # Ganti npm ci jika ada masalah dependensi
 
-      - run: npm run test:ci
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli  # Pastikan Angular CLI tersedia
+
+      - name: Run Tests
+        run: npm run test:ci
   Deploy-Preview:
     needs: [Test]
     runs-on: ubuntu-latest
