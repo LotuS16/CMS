@@ -51,7 +51,7 @@ const Dashboard: React.FC = () => {
         {user ? (
           <div className="text-center">
             <p className="text-lg font-medium text-gray-700">
-              Welcome, <span className="text-blue-600">{user.email}</span>
+              Selamat Datang, <span className="text-blue-600">{user.email}</span>
             </p>
           </div>
         ) : (
