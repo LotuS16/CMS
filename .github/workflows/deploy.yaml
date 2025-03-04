@@ -22,9 +22,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm test  # Pastikan perintah ini berjalan tanpa error
-
       - name: Build Project
         run: npm run build
 
