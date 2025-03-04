@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 .env
 .vercel
+*.test.tsx
+*.spec.tsx
